@@ -2,4 +2,5 @@
 /app/logs/*
 /vendor/
 /app/config/parameters.ini
+app/config/parameters.ini
 /src/Acme/
