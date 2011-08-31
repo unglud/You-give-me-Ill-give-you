@@ -1,0 +1,11 @@
+php_extensions:
+    - intl
+    - mbstring
+    - xsl
+    - apc
+    - mysql
+    - posix
+    - iconv
+#    - tokenizer
+    - xml
+    - pdo_mysql
