@@ -9,3 +9,5 @@ php_extensions:
 #    - tokenizer
     - xml
     - pdo_mysql
+
+php_short_open_tag: Off
