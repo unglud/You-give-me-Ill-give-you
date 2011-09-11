@@ -1,0 +1,7 @@
+parameters:
+#    unglued_gmgy.example.class: Unglued\GmgyBundle\Example
+
+services:
+#    unglued_gmgy.example:
+#        class: %unglued_gmgy.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

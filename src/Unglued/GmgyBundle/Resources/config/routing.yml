@@ -1,0 +1,6 @@
+home:
+    pattern:  /
+    defaults: { _controller: UngluedGmgyBundle:Default:index }
+about:
+    pattern:  /about
+    defaults: { _controller: UngluedGmgyBundle:Default:about }

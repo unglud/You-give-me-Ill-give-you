@@ -1,4 +1,5 @@
 imports:
+    - { resource: parameters_local.ini }
     - { resource: config.yml }
 
 framework:

@@ -1,5 +1,4 @@
-imports:
-    - { resource: parameters.ini }
+imports: 
     - { resource: security.yml }
 
 framework:

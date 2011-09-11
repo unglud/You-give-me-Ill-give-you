@@ -1,0 +1,56 @@
+{% extends 'UngluedGmgyBundle::layout.html.twig' %}
+
+{% block title %}О проекте | {% endblock %}
+
+{% block content %}
+	<article id="about" class="page" style="display:block">
+			<header>
+				<div class="container">
+					<a href="{{ path('home') }}" class="back">Вернуться на главную</a>
+					<h1 class="title">О проекте</h1>
+				</div>
+			</header>
+			<div class="container">
+				<section class="intro">
+					<h1>Introduction</h1>
+					<figure class="portrait">
+						<div class="mask"></div>
+						<img data-src="{{ asset('img/folder.png') }}" src="{{ asset('img/folder.png') }}">
+					</figure>
+					<div class="content">
+						<p>Проект находится в стадии разработки, поэтому далее только лоремы и ипсумы.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu purus nec ligula dignissim cursus at vel massa. Ut cursus posuere orci, eget fermentum lacus imperdiet vitae.</p>
+						<p>Mauris dapibus congue eros a sodales. Quisque dictum quam ut nulla mattis suscipit. Praesent odio sapien, commodo eget molestie in, vestibulum a dolor.</p>
+						<p>Maecenas ornare scelerisque bibendum. Morbi elit diam, lacinia vel laoreet eu, mattis ut tortor. Donec aliquam rutrum neque, id molestie justo iaculis eget. Mauris commodo tristique tincidunt. Phasellus sit amet eleifend purus.</p>
+						<p>Phasellus ut sapien sed ligula luctus pharetra ac sit amet arcu.</p>
+					</div>
+				</section>
+				<!--<section class="skills">
+					<h1>My Skills</h1>
+					<dl>
+						<dt>Photoshop</dt>
+						<dd><b></b><span>85</span></dd>
+						<dt>Fireworks</dt>
+						<dd><b></b><span>50</span></dd>
+						<dt>JavaScript</dt>
+						<dd><b></b><span>90</span></dd>
+						<dt>CSS</dt>
+						<dd><b></b><span>85</span></dd>
+						<dt>HTML</dt>
+						<dd><b></b><span>70</span></dd>
+						<dt>Linux</dt>
+						<dd><b></b><span>65</span></dd>
+					</dl>
+				</section>
+				<section class="downloads">
+					<h1>Downloads</h1>
+					<div class="vcard">
+						<a href="#example"><b></b><span>Download my vCard</span></a>
+					</div>
+					<div class="resume">
+						<a href="#example"><b></b><span>Download my Résumé</span></a>
+					</div>
+				</section>-->
+			</div>
+		</article>
+{% endblock %}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}{% endblock %}Give me, give you</title>
+	
+		
+	<script src="{{ asset('js/lib/modernizr-custom.js') }}"></script>
+	{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset('css/main.css') }}" />
+	{% endblock %}	
+	
+</head>
+<body>
+	<div id="page">
+		{% block content %}
+		<!-- Golbal Header -->
+		<header id="header">
+			<!-- Logo -->
+			<hgroup id="logo">
+				<h1>Give me, give you</h1>
+				<h2>Еще один файлообменник</h2>
+			</hgroup>
+			<!-- /Logo -->
+
+			<!-- Golbal Nav -->
+			<nav id="nav">
+				<h1>Navigation</h1>
+				<ul>
+					<!--<li class="portfolio"><a href="#/portfolio"><b></b><span>Portfolio</span></a></li>-->
+					<li class="about"><a href="{{ path('about') }}"><b></b><span>О проекте</span></a></li>
+					<!--<li class="contact"><a href="#/contact-me"><b></b><span>Contact me</span></a></li>-->
+				</ul>
+			</nav>
+			<!-- /Golbal Nav -->
+		</header>
+		<!-- /Golbal Header -->
+		{% endblock %}
+
+		<!-- Global Footer (will be appended to all pages)-->
+		<footer id="footer">
+			<div class="container">
+				<a class="back-to-top" href="#">Наверх</a>		
+				<div class="legal">2011 | Unglued | Проект open-source, все права на файлы принадлежат их владельцам.</div>
+			</div>
+		</footer>
+		<!-- /Global Footer -->
+	</div>
+	<!-- Client-side Template -->
+	<script id="tooltip-tpl" type="text/html">
+		<span class="tooltip">
+			<b class="arrow"></b>
+			<span class="content"><%= text %></span>
+		</span>
+	</script>
+	<script id="filter-tpl" type="text/html">
+		<div class="filter">
+			<b></b>
+			<ul>
+				<li class="active">Everything</li>
+				<li>Web Design</li>
+				<li>Print Design</li>
+				<li>Photography</li>
+			</ul>
+			<span class="thumb"><b></b><span></span></span>
+		</div>
+	</script>
+	<script id="pagination-tpl" type="text/html">
+		<span class="pagination">
+			<span class="prev"></span><span class="num"></span><span class="next"></span>
+		</span>
+	</script>
+	<script id="indicators-tpl" type="text/html">
+		<div class="indicators">
+			<span class="progress">Sending message...</span>
+			<span class="success">Message sent successfully</span>
+			<span class="error">Error sending message</span>
+		</div>
+	</script>
+	<!-- /Client-side Template -->
+	
+	{% block javascripts %}
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
+  <script>window.jQuery || document.write("<script src=\"{{ asset('js/lib/jquery.min.js') }}\"><\/script>")</script>
+
+  <script defer src="{{ asset('js/plugins.js') }}"></script>
+	<!-- JavaScript Libraries -->
+	<!--<script src="js/lib/jquery.min.js"></script>-->
+	<script src="{{ asset('js/lib/underscore.min.js') }}"></script>
+	<script src="{{ asset('js/lib/backbone.min.js') }}"></script>
+	<script src="{{ asset('js/lib/jquery-css-transform.js') }}"></script>
+	<script src="{{ asset('js/lib/jquery-animate-css-rotate-scale.js') }}"></script>
+	<script src="{{ asset('js/lib/jquery.quicksand.js') }}"></script>
+	<script src="{{ asset('js/custom/jquery.slider.js') }}"></script>
+	<script src="{{ asset('js/custom/jquery.lava.js') }}"></script>
+	<script src="{{ asset('js/custom/jquery.gmaps.js') }}"></script>
+	<script src="{{ asset('js/custom/jquery.h5f.js') }}"></script>
+	<script src="{{ asset('js/custom/interactivevalidation.js') }}"></script>
+	<!-- /JavaScript Libraries -->
+
+	<script defer src="{{ asset('js/script.js') }}"></script>
+	<!-- Custom JavaScript -->
+	<script src="{{ asset('js/model.js') }}"></script>
+	<script src="{{ asset('js/router.js') }}"></script>
+	<script src="{{ asset('js/view.js') }}"></script>
+	<script src="{{ asset('js/bootstrap.js') }}"></script>
+	<!-- /Custom JavaScript -->
+	{% endblock %}
+	
+</body>
+</html>
