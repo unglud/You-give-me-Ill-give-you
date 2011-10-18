@@ -1,3 +1,4 @@
 <?php 
-echo 'test 1';
+$sha = $GET['s'];
+echo 'echo "test: ".$sha';
 ?>
