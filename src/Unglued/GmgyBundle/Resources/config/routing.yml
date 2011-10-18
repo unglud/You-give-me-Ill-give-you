@@ -4,3 +4,13 @@ home:
 about:
     pattern:  /about
     defaults: { _controller: UngluedGmgyBundle:Default:about }
+
+_db_create:
+    pattern:  /db/create
+    defaults: { _controller: UngluedGmgyBundle:Default:create }
+_db_show:
+    pattern:  /db/show/{id}
+    defaults: { _controller: UngluedGmgyBundle:Default:show, id:0 }
+_db_update:
+    pattern:  /db/update/{id}
+    defaults: { _controller: UngluedGmgyBundle:Default:update, id:0 }

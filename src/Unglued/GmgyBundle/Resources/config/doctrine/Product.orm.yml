@@ -1,0 +1,17 @@
+Unglued\GmgyBundle\Entity\Product:    
+    type: entity
+    repositoryClass: Unglued\GmgyBundle\Repository\ProductRepository
+    teble: product
+    id:
+        id:
+            type: integer
+            generator: {strategy: AUTO}
+    fields:
+        name:
+            type: string
+            length: 100
+        price:
+            type: decimal
+            scale: 2
+        description:
+            type: text
